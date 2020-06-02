@@ -11,7 +11,6 @@ import {
 
 export class Chart extends Component {
   render() {
-    console.log(this.props.data);
     const data = [
       {
         stats: `Cases: ${this.props.data.cases}`,

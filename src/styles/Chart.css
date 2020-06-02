@@ -9,3 +9,7 @@
     color: #000;
   }
 }
+
+ul.react-autocomplete-input > li {
+  color: #000;
+}
