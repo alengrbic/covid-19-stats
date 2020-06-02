@@ -1,4 +1,5 @@
 {
+  "homepage": "http://alengrbic.github.io/covid-19-stats",
   "name": "prx",
   "version": "0.1.0",
   "private": true,
@@ -18,6 +19,8 @@
     "recharts": "^1.8.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "set PORT=3006 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
