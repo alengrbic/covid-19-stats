@@ -4,6 +4,7 @@ import { Map, TileLayer, Popup, Circle } from "react-leaflet";
 export class Maps extends Component {
   state = {
     zoom: 2,
+    country: "",
   };
 
   render() {
@@ -38,6 +39,9 @@ export class Maps extends Component {
               const position = [el.countryInfo.lat, el.countryInfo.long];
               return (
                 <Circle
+                  onclick={() => {
+                    this.setState({ country: el.country });
+                  }}
                   key={el.countryInfo._id + el.country}
                   color="red"
                   radius={radiusSize}

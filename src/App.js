@@ -42,7 +42,7 @@ export class App extends Component {
         </p>
         <h2>Live updates on Covid-19</h2>
 
-        <Maps test={} countryName={this.state.data} />
+        <Maps countryName={this.state.data} />
         <CasesInput data={this.state.data} total={this.state.total} />
         {/* <p>
           Data providers : <br /> https://corona.lmao.ninja/v2/countries <br />
